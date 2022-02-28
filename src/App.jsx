@@ -7,22 +7,24 @@ import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import Home from './routes/Home';
 import Menu from './routes/Menu';
-import Booking from './routes/Booking'
+import Booking from './routes/Booking';
+import data from './data';
 
 function App() {
   return (
     <div className="App">
       <header>
+        <img id='logo' src='./nypizzalogo.svg' alt="ny pizza logo" />
         <nav>
-          <Link to="/">Home</Link>
-          <Link to="/menu">Menu</Link>
-          <Link to="/booking">Booking</Link>
+          <Link to="/" className="fancy-btn">Home</Link>
+          <Link to="/menu" className="fancy-btn">Menu</Link>
+          <Link to="/booking" className="fancy-btn">Booking</Link>
         </nav>
       </header>
       <main>
         <Routes>
           <Route path="/" element={<Home />}></Route>
-          <Route path="menu" element={<Menu />}></Route>
+          <Route path="menu" element={<Menu data={data} />}></Route>
           <Route path="booking" element={<Booking />}></Route>
         </Routes>
       </main>
