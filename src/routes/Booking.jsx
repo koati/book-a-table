@@ -4,17 +4,17 @@ import { Link } from 'react-router-dom';
 
 const Booking = () => {
 
+    const today = new Date().toISOString().split("T")[0];
+    console.log(today);
+
+    const timePlusOneHour = (new Date().getHours() + 1) + ":" + new Date().getMinutes()
+    console.log(timePlusOneHour);
 
     const [email, setEmail] = useState("")
     const [date, setDate] = useState("")
     const [time, setTime] = useState("")
     const [seats, setSeats] = useState(1)
 
-    const today = new Date().toISOString().split("T")[0];
-    console.log(today);
-
-    const timePlusOneHour = (new Date().getHours() + 1) + ":" + new Date().getMinutes()
-    console.log(timePlusOneHour);
 
     const [showSubmit, setShowSubmit] = useState(false)
 
@@ -45,7 +45,7 @@ const Booking = () => {
 
                 :
 
-                <form form action="">
+                <form>
 
                     <label for="email">Enter your email:</label>
                     <input type="email" placeholder="email..." onChange={(e) => setEmail(e.target.value)} id="email" name="email" value={email} />
