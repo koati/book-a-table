@@ -17,7 +17,9 @@ const Menu = ({ data }) => {
             <div className='drinks'>
                 {data.drinks.map(drink =>
                     <div key={drink.name} className='drink'>
-                        <img className='drink-photo' src={drink.photo} alt='drink' />
+                        <div className='drink-container'>
+                            <img className='drink-photo' src={drink.photo} alt='drink' />
+                        </div>
                         <div className='drink-name'>{drink.name}</div>
                         <div className="drink-price"> {drink.price} </div>
                     </div>
