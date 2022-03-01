@@ -303,10 +303,10 @@ form .fancy-btn,
     align-items: center;
     justify-content: center;
   }
-  nav {
-    /* position: fixed; */
-    /* top: 0; */
-  }
+  /* nav {
+   position: fixed; 
+    top: 0; 
+  } */
   .fancy-btn {
     font-size: 15px;
     margin: 10px auto 10px auto;
