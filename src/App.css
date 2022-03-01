@@ -121,6 +121,11 @@ nav {
 /* Menu */
 
 #menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  padding-top: 150px;
   min-height: 100vh;
   background-image: url("photos/bacgroundmenu.jpg");
   background-position: center;
@@ -129,5 +134,63 @@ nav {
   color:wheat;
 }
 
+.pizzas {
+  /* flex-basis: 50%; */
+}
 
+.pizza {
+    margin: 10px 5px 10px 10px;
+    /* margin: 10px auto 10px auto; */
+    padding: 30px;
+    border-radius: 5px;
+    background: rgba(0, 120, 90, 0.8);
+    width: 280px;
+    height: 240px;
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.pizza:hover {
+  background: wheat;
+  color:rgba(0, 130, 90);
+}
+
+.pizza-description {
+  text-align: center;
+} 
+
+.drinks {
+  /* flex-basis: 50%; */
+  /* margin: 0 auto; */
+}
+
+.drink {
+  width: 190px; 
+  
+  margin: 10px 10px 10px 5px;
+  /* margin: 10px auto 10px auto; */
+  padding: 5px;
+  border-radius: 5px;
+  background: rgba(0, 120, 90, 0.8);
+}
+
+.drink:hover {
+  background: wheat;
+  color:rgba(0, 130, 90);
+}
+
+.drink-name {
+  text-align: center;
+}
+
+.drink-price{
+  text-align: center
+}
+
+.drink-photo {
+  width: 180px;
+  height: 190px;
+}

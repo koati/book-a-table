@@ -1,4 +1,3 @@
-// import photos from './photos'
 
 const data = {
     pizzas: [
