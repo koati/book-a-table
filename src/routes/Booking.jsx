@@ -67,7 +67,7 @@ const Booking = () => {
                     </select>
 
                     {/* <button className='fancy-btn' onClick={submit}>Send</button> */}
-                    <input className='fancy-btn' type="submit" onClick={submit} />
+                    <input className='fancy-btn' type="submit" onClick={submit} value='Send' />
 
                 </form>
             }
