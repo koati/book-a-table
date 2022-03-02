@@ -48,14 +48,14 @@ const Booking = () => {
                 <form>
 
                     <label for="email">Enter your email:</label>
-                    <input type="email" placeholder="email..." onChange={(e) => setEmail(e.target.value)} id="email" name="email" value={email} />
+                    <input type="email" required placeholder="email..." onChange={(e) => setEmail(e.target.value)} id="email" name="email" value={email} />
                     {/* <input onClick={() => setEmail("")} onChange={(e) => setEmail(e.target.value)} type="email" id="email" name="email" value={email} /> */}
 
                     <label for="date">Date:</label>
-                    <input type="date" onChange={(e) => setDate(e.target.value)} min={today} id="dt" value={date} name="date" />
+                    <input type="date" required onChange={(e) => setDate(e.target.value)} min={today} id="dt" value={date} name="date" />
 
                     <label for="time">Select a time:</label>
-                    <input type="time" onChange={(e) => setTime(e.target.value)} value={time} min={timePlusOneHour} id="time" name="time" />
+                    <input type="time" required onChange={(e) => setTime(e.target.value)} value={time} min={timePlusOneHour} id="time" name="time" />
 
                     <label for="seats">Guest number:</label>
                     <select onChange={(e) => setSeats(e.target.value)} name="seats" id="seats" value={seats}>
@@ -66,8 +66,8 @@ const Booking = () => {
                         <option value="5">5</option>
                     </select>
 
-                    <button className='fancy-btn' onClick={submit}>Send</button>
-                    {/* <input className='fancy-btn' type="submit" onClick={submit} /> */}
+                    {/* <button className='fancy-btn' onClick={submit}>Send</button> */}
+                    <input className='fancy-btn' type="submit" onClick={submit} />
 
                 </form>
             }
