@@ -45,7 +45,7 @@ const Booking = () => {
 
                 :
 
-                <form>
+                <form onSubmit={submit}>
 
                     <label for="email">Enter your email:</label>
                     <input type="email" required placeholder="email..." onChange={(e) => setEmail(e.target.value)} id="email" name="email" value={email} />
@@ -67,7 +67,8 @@ const Booking = () => {
                     </select>
 
                     {/* <button className='fancy-btn' onClick={submit}>Send</button> */}
-                    <input className='fancy-btn' type="submit" onClick={submit} value='Send' />
+                    {/* <input className='fancy-btn' type="submit" onClick={submit} value='Send' /> */}
+                    <button className='fancy-btn'>Send</button>
 
                 </form>
             }

@@ -1,7 +1,7 @@
 import React from 'react'
-// import data from './data'
+import data from '../data'
 
-const Menu = ({ data }) => {
+const Menu = () => {
 
     return (
         <div id='menu'>
@@ -17,7 +17,7 @@ const Menu = ({ data }) => {
             <div className='drinks'>
                 {data.drinks.map(drink =>
                     <div key={drink.name} className='drink'>
-                        <img className='drink-photo' src={drink.photo} alt='drink' />
+                        <img className='drink-photo' src={'img/'+drink.photo} alt='drink' />
                         <div className='drink-name'>{drink.name}</div>
                         <div className="drink-price"> {drink.price} </div>
                     </div>

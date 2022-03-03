@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <img id='logo' src='./nypizzalogo.svg' alt="ny pizza logo" />
+        <img id='logo' src='/img/nypizzalogo.svg' alt="ny pizza logo" />
         <nav>
           <Link to="/" className="fancy-btn">Home</Link>
           <Link to="/menu" className="fancy-btn">Menu</Link>
@@ -24,7 +24,7 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<Home />}></Route>
-          <Route path="menu" element={<Menu data={data} />}></Route>
+          <Route path="menu" element={<Menu />}></Route>
           <Route path="booking" element={<Booking />}></Route>
         </Routes>
       </main>

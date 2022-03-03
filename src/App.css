@@ -96,7 +96,7 @@ nav {
   align-items: center;
 
   min-height: 100vh;
-  background-image: url("photos/background.jpeg");
+  background-image: url("../public/photos/background.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -130,7 +130,7 @@ nav {
   min-height: 100vh;
   /* width: 100%; */
   
-  background-image: url("photos/bookingbackground.png");
+  background-image: url("../public/photos/bookingbackground.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -222,7 +222,7 @@ form .fancy-btn,
 
   padding-top: 150px;
   min-height: 100vh;
-  background-image: url("photos/bacgroundmenu.jpg");
+  background-image: url("../public/photos/bacgroundmenu.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
